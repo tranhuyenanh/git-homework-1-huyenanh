@@ -47,3 +47,18 @@ git branch -d week2
    git checkout work-in-progress
    git push -u origin work-in-progress
 
+
+## PART C
+1. Add text to wip.txt and commit on work-in-progress:
+   git checkout work-in-progress
+   echo "Adding new progress content for Part C" >> wip.txt
+   git add wip.txt
+   git commit -m "Update wip.txt in work-in-progress branch"
+
+2. Command to show branches with upstream and ahead/behind info:
+   git branch -vv
+
+3. Push branch and open Pull Request:
+   git push origin work-in-progress
+   # Created Pull Request from work-in-progress to master on GitHub UI.
+
