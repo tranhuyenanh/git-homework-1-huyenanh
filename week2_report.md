@@ -62,3 +62,29 @@ git branch -d week2
    git push origin work-in-progress
    # Created Pull Request from work-in-progress to master on GitHub UI.
 
+
+## PART D
+1. Create experiment branch and make 2 commits:
+   git checkout master
+   git checkout -b experiment
+   touch exp1.txt && git add exp1.txt && git commit -m "Add exp1.txt"
+   touch exp2.txt && git add exp2.txt && git commit -m "Add exp2.txt"
+
+2. Switch to master and make 1 commit:
+   git checkout master
+   touch main_file.txt && git add main_file.txt && git commit -m "Add main_file.txt on master"
+
+3. Rebase experiment onto master:
+   git checkout experiment
+   git rebase master
+
+4. Explain rebase in week2.md:
+   Added linear history explanation to week2.md.
+
+5. Fast-forward merge experiment into master:
+   git checkout master
+   git merge experiment
+
+6 & 7. Push master branch and week2.md to GitHub:
+   git push origin master
+
