@@ -8,3 +8,6 @@ Noi dung 3
 
 --- Unmerged Branches ---
   wip
+
+--- Rebase Explanation ---
+When rebasing 'experiment' onto 'master', Git temporarily removes the commits on 'experiment', applies the new commit from 'master', and then re-applies the 'experiment' commits on top. This creates a linear commit history.
