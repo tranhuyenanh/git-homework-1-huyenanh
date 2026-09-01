@@ -25,3 +25,25 @@ git checkout -b week2b
 git merge --no-ff week2 -m "3-way merge week2 into week2b"
 git branch -d week2
 
+
+## PART B
+1. Create wip branch, add wip.txt, commit, switch to master and merge week2b:
+   git checkout -b wip
+   touch wip.txt
+   git add wip.txt
+   git commit -m "Add wip.txt"
+   git checkout master
+   git merge week2b
+
+2. Filter merged and unmerged branches:
+   git branch --merged
+   git branch --no-merged
+
+3. Delete week2b branch:
+   git branch -d week2b
+
+4. Rename wip to work-in-progress and push to GitHub:
+   git branch -m wip work-in-progress
+   git checkout work-in-progress
+   git push -u origin work-in-progress
+
