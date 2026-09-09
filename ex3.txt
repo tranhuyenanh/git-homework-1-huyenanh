@@ -1,0 +1,8 @@
+PART A
+1. cd ~ && mkdir ex3
+2. cd ex3
+3. mkdir dir1 dir2
+4. touch HelloWorld.txt && cp HelloWorld.txt dir1/
+5. cp -i HelloWorld.txt dir1/
+6. mv HelloWorld.txt Hi.txt
+7. mv Hi.txt dir2/
