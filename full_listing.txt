@@ -1,0 +1,12 @@
+total 10
+-rw-r--r-- 1 P1-G4 197121    0 Sep  9 18:45 Hi-sym
+drwxr-xr-x 1 P1-G4 197121    0 Sep  9 18:53 dir1/
+drwxr-xr-x 1 P1-G4 197121    0 Sep  9 18:54 dir2/
+-rw-r--r-- 1 P1-G4 197121 1561 Sep  9 18:55 ex3.txt
+-rw-r--r-- 1 P1-G4 197121    0 Sep  9 18:50 exp1.txt
+-rw-r--r-- 1 P1-G4 197121    0 Sep  9 18:50 exp2.txt
+-rw-r--r-- 1 P1-G4 197121    0 Sep  9 18:50 main_file.txt
+drwxr-xr-x 1 P1-G4 197121    0 Sep  9 18:50 part1/
+-rw-r--r-- 1 P1-G4 197121   81 Sep  9 18:58 sample30.txt
+-rw-r--r-- 1 P1-G4 197121  374 Sep  9 18:50 week2.md
+-rw-r--r-- 1 P1-G4 197121 2600 Sep  9 18:50 week2_report.md

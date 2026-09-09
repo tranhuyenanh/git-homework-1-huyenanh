@@ -38,3 +38,18 @@ total 0
 dir2:
 total 0
 14073748835617640 -rw-r--r-- 2 P1-G4 197121 0 Sep  9 18:45 Hi-hard
+
+PART C
+1. Count unique programs in /bin and /usr/bin:
+   ls /bin /usr/bin | sort -u | wc -l
+
+2. Find programs containing 'zip':
+   ls /bin /usr/bin | sort -u | grep "zip"
+
+3. File with 30 lines (sample30.txt):
+   - First 5 lines: head -n 5 sample30.txt
+   - Last 5 lines: tail -n 5 sample30.txt
+   - Count lines, words, bytes: wc sample30.txt
+
+4. Save listing using tee:
+   ls -l | tee full_listing.txt
