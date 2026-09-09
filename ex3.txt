@@ -53,3 +53,18 @@ PART C
 
 4. Save listing using tee:
    ls -l | tee full_listing.txt
+
+PART D
+1. Permissions directory setup:
+   mkdir permissions && cd permissions
+   touch secret.txt shared.txt public.txt
+   chmod 600 secret.txt
+   chmod 664 shared.txt
+   chmod 777 public.txt
+   cd ..
+
+2. Check umask and default permissions:
+   umask value: $(umask)
+   Created test_umask.txt with permissions:
+$(ls -l test_umask.txt)
+   Explanation: Default max file permission is 666. Subtracted by umask (0022), the resulting permission is 644 (rw-r--r--), giving owner read/write access and group/others read-only access.
