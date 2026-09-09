@@ -12,14 +12,6 @@ PART B
    ln dir2/Hi.txt Hi-hard
    ln dir2/Hi.txt dir1/Hi-hard
    ln dir2/Hi.txt dir2/Hi-hard
-
-cat << 'EOF' >> ex3.txt
-
-PART B
-1. Create hard links:
-   ln dir2/Hi.txt Hi-hard
-   ln dir2/Hi.txt dir1/Hi-hard
-   ln dir2/Hi.txt dir2/Hi-hard
 2. Create symbolic link:
    ln -s dir2/Hi.txt Hi-sym
 3. Remove Hi-hard in ex3:
