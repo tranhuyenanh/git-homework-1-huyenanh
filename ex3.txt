@@ -6,3 +6,43 @@ PART A
 5. cp -i HelloWorld.txt dir1/
 6. mv HelloWorld.txt Hi.txt
 7. mv Hi.txt dir2/
+
+PART B
+1. Create hard links:
+   ln dir2/Hi.txt Hi-hard
+   ln dir2/Hi.txt dir1/Hi-hard
+   ln dir2/Hi.txt dir2/Hi-hard
+
+cat << 'EOF' >> ex3.txt
+
+PART B
+1. Create hard links:
+   ln dir2/Hi.txt Hi-hard
+   ln dir2/Hi.txt dir1/Hi-hard
+   ln dir2/Hi.txt dir2/Hi-hard
+2. Create symbolic link:
+   ln -s dir2/Hi.txt Hi-sym
+3. Remove Hi-hard in ex3:
+   rm Hi-hard
+4. Remove original Hi.txt:
+   rm dir2/Hi.txt
+5. Output of ls -li:
+total 6
+11258999068735932 -rw-r--r-- 1 P1-G4 197121    0 Sep  9 18:45 Hi-sym
+ 4503599627620292 drwxr-xr-x 1 P1-G4 197121    0 Sep  9 18:53 dir1/
+ 5066549581381223 drwxr-xr-x 1 P1-G4 197121    0 Sep  9 18:54 dir2/
+12384898975300388 -rw-r--r-- 1 P1-G4 197121  605 Sep  9 18:55 ex3.txt
+ 7036874418433646 -rw-r--r-- 1 P1-G4 197121    0 Sep  9 18:50 exp1.txt
+ 7881299348565630 -rw-r--r-- 1 P1-G4 197121    0 Sep  9 18:50 exp2.txt
+ 5910974511591044 -rw-r--r-- 1 P1-G4 197121    0 Sep  9 18:50 main_file.txt
+ 4503599628037781 drwxr-xr-x 1 P1-G4 197121    0 Sep  9 18:50 part1/
+ 4785074604748454 -rw-r--r-- 1 P1-G4 197121  374 Sep  9 18:50 week2.md
+ 5629499534880423 -rw-r--r-- 1 P1-G4 197121 2600 Sep  9 18:50 week2_report.md
+dir1:
+total 0
+13510798882258119 -rw-r--r-- 1 P1-G4 197121 0 Sep  9 18:46 HelloWorld.txt
+14073748835617640 -rw-r--r-- 2 P1-G4 197121 0 Sep  9 18:45 Hi-hard
+
+dir2:
+total 0
+14073748835617640 -rw-r--r-- 2 P1-G4 197121 0 Sep  9 18:45 Hi-hard
